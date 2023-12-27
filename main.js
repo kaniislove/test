@@ -58,8 +58,10 @@ let imgElement = document.querySelector("img");
 
 function toggleImage() {
   let mySrc = imgElement.getAttribute('src');
+  // getAttribute src를 속성이라고도하고 어트리뷰트라고도함 get 가져오겠따
   if (mySrc === 'img/loopy_off.jpg'){
     imgElement.setAttribute("src","img/loopy_on.jpg")
+    // .setAttribute 어트리뷰트를 세팅할껀데 미피로 바꿀꺼야 
   }else{
     imgElement.setAttribute("src","img/loopy_off.jpg")
   }
